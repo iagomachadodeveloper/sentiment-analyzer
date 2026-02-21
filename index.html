@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Sentimentos com IA</title>
+    <title>Sentiment Analyzer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Analisador de Sentimentos</h1>
-            <p class="subtitle">Machine Learning para análise de texto em tempo real</p>
+            <h1>Sentiment Analyzer</h1>
+            <p class="subtitle">Machine Learning for text analyzing in real time using TensorFlow.js</p>
         </header>
 
         <main>
             <div class="input-section">
                 <textarea
                     id="textInput"
-                    placeholder="Digite um texto para analisar o sentimento..."
+                    placeholder="How have you been feeling?"
                     rows="4"
                 ></textarea>
                 <button id="analyzeBtn" class="btn btn-primary">
-                    Analisar Sentimento
+                    Check Sentiment
                 </button>
             </div>
 
             <div class="result-section" id="resultSection">
                 <div class="sentiment-display">
                     <div id="emoji" class="emoji">🤔</div>
-                    <div id="sentimentLabel" class="sentiment-label">Aguardando análise...</div>
+                    <div id="sentimentLabel" class="sentiment-label">Waiting analysis...</div>
                 </div>
 
                 <div class="confidence-bar-container">
                     <div class="bar-labels">
-                        <span>Negativo</span>
-                        <span>Positivo</span>
+                        <span>Negative</span>
+                        <span>Positive</span>
                     </div>
                     <div class="confidence-bar">
                         <div id="negativeBar" class="bar negative" style="width: 50%"></div>
@@ -46,40 +46,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="examples-section">
-                <h3>Exemplos para testar:</h3>
-                <div class="example-buttons">
-                    <button class="example-btn" data-text="I love this product! It's amazing and works perfectly.">
-                        😊 Texto positivo
-                    </button>
-                    <button class="example-btn" data-text="This is terrible. Worst experience ever. Very disappointed.">
-                        😠 Texto negativo
-                    </button>
-                    <button class="example-btn" data-text="The movie was okay, nothing special but not bad either.">
-                        😐 Texto neutro
-                    </button>
-                </div>
-            </div>
         </main>
-
-        <footer>
-            <div class="tech-stack">
-                <span class="tech-badge">TensorFlow.js</span>
-                <span class="tech-badge">NLP</span>
-                <span class="tech-badge">Deep Learning</span>
-                <span class="tech-badge">Sentiment Analysis</span>
-            </div>
-            <p class="footer-text">
-                Modelo pré-treinado em milhares de reviews para classificação de sentimentos
-            </p>
-        </footer>
     </div>
 
     <div id="loadingOverlay" class="loading-overlay">
         <div class="loading-content">
             <div class="spinner"></div>
-            <p id="loadingText">Carregando modelo de IA...</p>
+            <p id="loadingText">Loading IA model...</p>
         </div>
     </div>
 
