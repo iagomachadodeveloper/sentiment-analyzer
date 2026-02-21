@@ -346,15 +346,15 @@ class SentimentAnalyzer {
 
         if (positiveScore > 0.6) {
             emoji.textContent = '😊';
-            label.textContent = 'Sentimento Positivo';
+            label.textContent = 'Positive';
             label.classList.add('positive');
         } else if (positiveScore < 0.4) {
             emoji.textContent = '😠';
-            label.textContent = 'Sentimento Negativo';
+            label.textContent = 'Negativo';
             label.classList.add('negative');
         } else {
             emoji.textContent = '😐';
-            label.textContent = 'Sentimento Neutro';
+            label.textContent = 'Neutral';
             label.classList.add('neutral');
         }
     }
