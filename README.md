@@ -61,11 +61,6 @@ npx serve
 
 3. Abra no navegador: `http://localhost:8000`
 
-## Deploy no GitHub Pages
-
-1. Vá em Settings > Pages no repositório
-2. Selecione branch `main` e pasta `/ (root)`
-3. Acesse: `https://seu-usuario.github.io/sentiment-analyzer`
 
 ## Conceitos de Machine Learning Demonstrados
 
